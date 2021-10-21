@@ -1,0 +1,77 @@
+    /* Culinary & Lodging*/
+    .card-oneline {
+        transition: transform 500ms ease;
+        background-size: cover;
+        padding-bottom: 10em;
+        overflow: hidden;
+    }
+    .card-twoline {
+        transition: transform 500ms ease;
+        background-size: cover;
+        padding-bottom: 10em;
+        overflow: hidden;
+    }
+
+    /* Tourism */
+    .card-tourism-oneline {
+        transition: transform 500ms ease;
+        background-size: cover;
+        padding-bottom: 16em;
+        overflow: hidden;
+    }
+    .card-tourism-twoline {
+        transition: transform 500ms ease;
+        background-size: cover;
+        padding-bottom: 10em;
+        overflow: hidden;
+    }
+
+
+
+    /* Box Content */
+    .card-content-tourism {
+        transform: translateY(214%);
+    }
+    .card-content-oneline {
+        transform: translateY(185%);
+    }
+    .card-content-twoline {
+        transform: translateY(147%);
+    }
+
+
+
+    /* Hover-CL-Oneline */
+    .card-oneline:hover {
+        transform: scale(1.05);
+    }
+    .card-oneline:hover::after {
+        transform: scaleX(1);
+    }
+    .card-oneline:hover .card-content-oneline {
+        transform: translateY(57%);
+    }
+
+    /* Hover-CL-Twoline */
+    .card-twoline:hover {
+        transform: scale(1.05);
+    }
+    .card-twoline:hover::after {
+        transform: scaleX(1);
+    }
+    .card-twoline:hover .card-content-twoline {
+        transform: translateY(57%);
+    }
+
+
+
+    /* Hover-Tourism-Oneline */
+    .card-tourism-oneline:hover {
+        transform: scale(1.015);
+    }
+    .card-tourism-oneline:hover::after {
+        transform: scaleX(1);
+    }
+    .card-tourism-oneline:hover .card-toursim-oneline {
+        transform: translateY(57%);
+    }

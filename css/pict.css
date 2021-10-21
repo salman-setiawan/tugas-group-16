@@ -1,0 +1,100 @@
+/* HOME */
+.homepage {
+    background-color: #000000;
+    background-image: url("/pict/photo/home/bg-kota-batu-dark.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tour-pic {
+    background-image: url("/pict/photo/home/tour.jpg");
+}
+.culiner-pic {
+    background-image: url("/pict/photo/home/culinary.jpg");
+}
+.lodging-pic {
+    background-image: url("/pict/photo/home/lodging.jpg");
+}
+
+/* ABOUT US */
+.map-pic {
+    background-image: url("/pict/photo/about/maps.png");
+    background-position: center;
+}
+
+.sl2-pic {
+    background-image: url("/pict/photo/about/slide-2.jpg");
+}
+
+.img-about-1 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+.img-about-2 {
+    background-image: url("/pict/photo/about/songgo.jpg");
+}
+.img-about-3 {
+    background-image: url("/pict/photo/about/selecta.jpg");
+}
+
+.img-about-4 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+.img-about-5 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+.img-about-6 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+
+.img-about-7 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+.img-about-8 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+.img-about-9 {
+    background-image: url("/pict/photo/about/kusuma-argo.jpeg");
+}
+
+
+
+/* Culinary */
+.img-culinary-1 {
+    background-image: url("/pict/photo/tourism/coban-putri.jpg");
+}
+.img-culinary-2 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+.img-culinary-3 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+.img-culinary-4 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+
+/* Lodging */
+.img-lodging-1 {
+    background-image: url("/pict/photo/tourism/coban-putri.jpg");
+}
+.img-lodging-2 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+.img-lodging-3 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+.img-lodging-4 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+
+/* Tourism */
+.img-tourism-1 {
+    background-image: url("/pict/photo/tourism/coban-putri.jpg");
+}
+.img-tourism-2 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+.img-tourism-3 {
+    background-image: url("/pict/photo/sate.jpg");
+}
+.img-tourism-4 {
+    background-image: url("/pict/photo/sate.jpg");
+}
