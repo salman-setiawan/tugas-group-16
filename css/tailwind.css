@@ -15787,6 +15787,11 @@ video {
   background-color: rgba(31, 31, 30, var(--tw-bg-opacity));
 }
 
+.bg-salman-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgba(21, 21, 25, var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:bg-transparent {
   background-color: transparent;
 }

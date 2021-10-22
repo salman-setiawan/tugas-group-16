@@ -17,13 +17,23 @@
 }
 
 /* ABOUT US */
-.map-pic {
-    background-image: url("/pict/photo/about/maps.png");
-    background-position: center;
+.aboutpage {
+    background-image: url("/pict/photo/about/home.jpg");
+    background-size: cover;
 }
 
-.sl2-pic {
-    background-image: url("/pict/photo/about/slide-2.jpg");
+.map-pic {
+    background-image: url("/pict/photo/about/maps.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+.nature-pic {
+    background-image: url("/pict/photo/about/nature.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
 }
 
 .img-about-1 {
@@ -113,4 +123,17 @@
 }
 .img-tourism-4 {
     background-image: url("/pict/photo/sate.jpg");
+}
+
+
+/* article */
+.article-pic {
+    background-image: url("/pict/photo/home/culinary.jpg");
+    background-size: cover;
+}
+.pic-maps {
+    background-image: url("/pict/photo/about/maps.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 18rem;
 }

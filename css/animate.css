@@ -5,7 +5,6 @@
 }
 
 .ani-card {
-    max-height: 30rem;
     transition: transform 500ms ease;
 }
 
