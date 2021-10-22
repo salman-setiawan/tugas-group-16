@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/pict.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-200">
+<body class="bg-salman text-gray-50">
     <!-- NAVBAR -->
-    <nav class="px-24 hidden md:block bg-gray-200">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <nav class="px-32 bg-salman fix">
+        <div class="max-w-7xl mx-auto">
             <div class="relative flex items-center justify-between h-16">
 
                 <!-- LOGO -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="h-8 w-auto" src="/pict/logo/black-short-logo.png" alt="Workflow">
+                    <img class="h-8 w-auto" src="/pict/logo/white-short-logo.png" alt="Workflow">
                 </div>
 
                 <!-- MENU -->
@@ -24,11 +27,11 @@
 
                         <!-- TEXT -->
                         <div class="flex space-x-4">
-                            <a href="/index.html" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold bg-gray-200">Home</a>
-                            <a href="/data/02-tourism.html" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">Tourism</a>
-                            <a href="/data/03-culinary-restaurant.html" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">Culinary</a>
-                            <a href="/data/04-lodging-hotel.html" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">Lodging</a>
-                            <a href="/data/05-about-us.html" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">About Us</a>
+                            <a href="/index.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm font-bold">Home</a>
+                            <a href="/data/02-tourism.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Tourism</a>
+                            <a href="/data/03-culinary-restaurant.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Culinary</a>
+                            <a href="/data/04-lodging-hotel.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Lodging</a>
+                            <a href="/data/05-about-us.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">About Us</a>
                         </div>
 
                     </div>
@@ -39,51 +42,42 @@
     </nav>
 
     <!-- FIRST -->
-    <div class="py-24 relative flex justify-center">
-        <img class="w-72" src="/pict/logo/black-long-logo.png" alt="logo">
+    <div class="px-12 md:px-32 py-32 grid grid-cols-1">
+        <div class="homepage ani-card shadow-lgg">
+            <div class="py-40 flex justify-center">
+                <img class="w-1/4" src="/pict/logo/white-long-logo.png" alt="">
+            </div>
+        </div>
     </div>
+
 
     <!-- SECOND -->
     <div class="py-40">
-        <div class="sm:py-20 md:py-32 text-5xl text-gray-900 font-medium text-center">
+        <div class="sm:py-20 md:py-32 text-5xl font-medium text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
             Welcome
-        </div>
-    
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-12 items-center">
-            <div class="flex justify-center">
-                <img class="h-80 w-full object-cover" src="/pict/photo/home/kota-batu.jpg" alt="logo">
-            </div>
-            <div class="py-8">
-                <p class="pb-8 md:pb-16">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
-                </p>
-                <button class="bg-transparent hover:bg-gray-900 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-900 hover:border-transparent rounded">
-                    Click for more...
-                </button>
-            </div>
         </div>
     </div>
 
 
     <!-- THIRD -->
     <div class="py-40">
-        <div class="sm:py-20 md:py-32 text-5xl text-gray-900 font-medium text-center">
+        <div class="sm:py-20 md:py-32 text-5xl font-medium text-center">
             Explore 
         </div>
         
         <!-- Tour -->
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-12 items-center">
-            <div class="flex justify-center">
-                <img class="h-80 w-full object-cover" src="/pict/photo/home/kota-batu.jpg" alt="logo">
+        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
             </div>
-            <div class="sm:py-2 md:py-12">
-                <div class="sm:py-5 md:py-8 text-3xl font-medium">
-                    Tour
+            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+                <div class="pb-5 md:pb-8 text-3xl font-medium">
+                    Tourism
                 </div>
                 <p class="sm:pb-10 md:pb-16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
                 </p>
-                <button class="bg-transparent hover:bg-gray-900 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-900 hover:border-transparent rounded">
+                <button class="bg-gray-50 text-gray-900 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded">
                     Click for more...
                 </button>
             </div>
@@ -92,18 +86,18 @@
         <div class="py-12"></div>
 
         <!-- Culinary -->
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-12 items-center">
-            <div class="flex justify-center">
-                <img class="h-80 w-full object-cover" src="/pict/photo/home/kota-batu.jpg" alt="logo">
+        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
             </div>
-            <div class="sm:py-2 md:py-12">
-                <div class="sm:py-5 md:py-8 text-3xl font-medium">
+            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+                <div class="pb-5 md:pb-8 text-3xl font-medium">
                     Culinary
                 </div>
                 <p class="sm:pb-10 md:pb-16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
                 </p>
-                <button class="bg-transparent hover:bg-gray-900 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-900 hover:border-transparent rounded">
+                <button class="bg-gray-50 text-gray-900 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded">
                     Click for more...
                 </button>
             </div>
@@ -112,27 +106,22 @@
         <div class="py-12"></div>
 
         <!-- Lodging -->
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-12 items-center">
-            <div class="flex justify-center">
-                <img class="h-80 w-full object-cover" src="/pict/photo/home/kota-batu.jpg" alt="logo">
+        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
             </div>
-            <div class="sm:py-2 md:py-12">
-                <div class="sm:py-5 md:py-8 text-3xl font-medium">
+            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+                <div class="pb-5 md:pb-8 text-3xl font-medium">
                     Lodging
                 </div>
                 <p class="sm:pb-10 md:pb-16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
                 </p>
-                <button class="bg-transparent hover:bg-gray-900 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-900 hover:border-transparent rounded">
+                <button class="bg-gray-50 text-gray-900 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded">
                     Click for more...
                 </button>
             </div>
         </div>
-
-
-
-
-
 
     </div>
 
@@ -140,51 +129,52 @@
     
 
     <!-- FOOTER -->
-    <footer id="footer" class="relative z-50 dark:bg-gray-900">
-        <div tabindex="0" aria-label="footer" class="focus:outline-none border-t border-b border-gray-200 dark:border-gray-700 py-16">
-            <div class="mx-auto container px-4 xl:px-12 2xl:px-4">
-                <div class="lg:flex">
-                    <div class="w-full lg:w-1/2 mb-16 lg:mb-0 flex">
+    <footer class="px-32">
+        <div class="py-16">
+            <div class="w-full lg:w-1/2 mb-16 lg:mb-0 flex">
 
-                        <!-- COLUMN 1 -->
-                        <div class="w-full lg:w-1/2 px-6">
-                            <ul>
-                                <li><a class="focus:outline-none focus:underline  text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Home</a></li>
-                                <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Tourism</a></li>
-                                <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Culinary</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- COLUMN 2 -->
-                        <div class="w-full lg:w-1/2">
-                            <ul>
-                                <li><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Resort</a></li>
-                                <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">About Us</a></li>
-                                <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- COLUMN 3 -->
-                        <div class="w-full lg:w-1/2">
-                            <ul>
-                                <li><a href="javascript:void(0)" class="focus:underline focus:outline-none text-xs lg:text-sm leading-none text-gray-50">Partnership</a></li>
-                                <li class="mt-6"><a class="focus:underline focus:outline-none text-xs lg:text-sm leading-none hover:text-brand text-gray-50" href="javascript:void(0)">Privacy policy</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
+                <!-- COLUMN 1 -->
+                <div class="w-full lg:w-1/2">
+                    <ul>
+                        <li><a class="focus:outline-none focus:underline  text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Home</a></li>
+                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Tourism</a></li>
+                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Culinary</a></li>
+                    </ul>
                 </div>
+
+                <!-- COLUMN 2 -->
+                <div class="w-full lg:w-1/2">
+                    <ul>
+                        <li><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Resort</a></li>
+                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">About Us</a></li>
+                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none text-gray-50" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="w-full lg:w-1/2">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="focus:underline focus:outline-none text-xs lg:text-sm leading-none text-gray-50">Partnership</a></li>
+                        <li class="mt-6"><a class="focus:underline focus:outline-none text-xs lg:text-sm leading-none hover:text-brand text-gray-50" href="javascript:void(0)">Privacy policy</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
 
         <!-- COPYRIGHT -->
         <div class="flex flex-col justify-center">
-            <p tabindex="0" class="focus:outline-none mt-6 mb-6 ml-24 text-xs lg:text-sm leading-none text-gray-50">
-                Copyright Shining Batu. All Right Reserved
-                Designed by @eisenflux
-            </p>
+            <div class="py-6 text-sm">
+                <p class="mb-1">Copyright Shining Batu. All Right Reserved</p>
+                <p class="mt-1">Designed by @eisenflux</p>
+            </div>
         </div>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
