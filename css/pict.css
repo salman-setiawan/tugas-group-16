@@ -2,7 +2,6 @@
 .homepage {
     background-image: url("/pict/photo/home/home-pict.jpg");
     background-size: cover;
-    background-attachment: fixed;
 }
 .white-long-logo {
     background-image: url("/pict/logo/white-long-logo.png");
