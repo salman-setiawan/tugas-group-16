@@ -12,8 +12,8 @@
 </head>
 <body class="bg-salman text-gray-50">
     <!-- NAVBAR -->
-    <nav class="px-32 bg-salman fix">
-        <div class="max-w-7xl mx-auto">
+    <nav class="md:px-32 bg-salman fix">
+        <div class="max-w-7xl mx-auto hidden md:block">
             <div class="relative flex items-center justify-between h-16">
 
                 <!-- LOGO -->
@@ -23,7 +23,7 @@
 
                 <!-- MENU -->
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
-                    <div class="hidden sm:block sm:ml-6">
+                    <div class="sm:ml-6">
 
                         <!-- TEXT -->
                         <div class="flex space-x-4">
@@ -39,10 +39,34 @@
 
             </div>
         </div>
+
     </nav>
 
+    <!-- <div class="px-20 grid grid-cols-2 gap-2 items-center md:hidden">
+
+    </div> -->
+
+    <nav class="block md:hidden fix flex justify-end">
+      <div class="relative bg-salman min-h-screen w-14 flex items-center">
+        <div>
+          <div class="px-4 py-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+          </div>
+          <div class="px-4 py-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+          </div>
+          <div class="px-4 py-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+          </div>
+          <div class="px-4 py-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
     <!-- FIRST -->
-    <div class="px-12 md:px-32 py-32 grid grid-cols-1">
+    <div class="pl-10 pr-24 md:px-32 py-32 grid grid-cols-1">
         <div class="homepage ani-card shadow-lgg">
             <div class="py-40 flex justify-center">
                 <img class="w-1/4" src="/pict/logo/white-long-logo.png" alt="">
@@ -53,7 +77,7 @@
 
     <!-- SECOND -->
     <div class="py-40">
-        <div class="sm:py-20 md:py-32 text-5xl font-medium text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+        <div class="pl-10 pr-24 md:px-32 py-20 md:py-32 text-5xl font-medium text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
             Welcome
         </div>
     </div>
@@ -61,67 +85,67 @@
 
     <!-- THIRD -->
     <div class="py-40">
-        <div class="sm:py-20 md:py-32 text-5xl font-medium text-center">
+        <div class="pl-10 pr-24 md:px-32 py-20 md:py-32 text-5xl font-medium text-center">
             Explore 
         </div>
         
         <!-- Tour -->
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+        <div class="pl-10 pr-24 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
             <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
                 <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
             </div>
-            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+            <div class="py-8 md:py-12" data-aos="fade-left" data-aos-duration="1500">
                 <div class="pb-5 md:pb-8 text-3xl font-medium">
                     Tourism
                 </div>
-                <p class="sm:pb-10 md:pb-16">
+                <p class="pb-10 md:pb-16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
                 </p>
-                <button class="bg-gray-50 text-gray-900 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded">
+                <a class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" href="/data/02-tourism.html">
                     Click for more...
-                </button>
+                </a>
             </div>
         </div>
 
         <div class="py-12"></div>
 
         <!-- Culinary -->
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
-            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
-                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
-            </div>
-            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
-                <div class="pb-5 md:pb-8 text-3xl font-medium">
-                    Culinary
-                </div>
-                <p class="sm:pb-10 md:pb-16">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
-                </p>
-                <button class="bg-gray-50 text-gray-900 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded">
-                    Click for more...
-                </button>
-            </div>
-        </div>
+        <div class="pl-10 pr-24 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+          <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+              <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
+          </div>
+          <div class="py-8 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+              <div class="pb-5 md:pb-8 text-3xl font-medium">
+                  Tourism
+              </div>
+              <p class="pb-10 md:pb-16">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
+              </p>
+              <a class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" href="/data/02-tourism.html">
+                  Click for more...
+              </a>
+          </div>
+      </div>
 
         <div class="py-12"></div>
 
         <!-- Lodging -->
-        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
-            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
-                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
-            </div>
-            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
-                <div class="pb-5 md:pb-8 text-3xl font-medium">
-                    Lodging
-                </div>
-                <p class="sm:pb-10 md:pb-16">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
-                </p>
-                <button class="bg-gray-50 text-gray-900 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded">
-                    Click for more...
-                </button>
-            </div>
-        </div>
+        <div class="pl-10 pr-24 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+          <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+              <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
+          </div>
+          <div class="py-8 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+              <div class="pb-5 md:pb-8 text-3xl font-medium">
+                  Tourism
+              </div>
+              <p class="pb-10 md:pb-16">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
+              </p>
+              <a class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" href="/data/02-tourism.html">
+                  Click for more...
+              </a>
+          </div>
+      </div>
 
     </div>
 
@@ -129,7 +153,7 @@
     
 
     <!-- FOOTER -->
-    <footer class="px-32">
+    <footer class="pl-10 pr-24 md:px-32">
         <div class="py-16">
             <div class="w-full lg:w-1/2 mb-16 lg:mb-0 flex">
 

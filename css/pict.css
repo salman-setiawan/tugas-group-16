@@ -60,6 +60,11 @@
 
 
 /* Culinary */
+.culinarypage {
+    background-image: url("/pict/photo/culinary/home.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
 .img-culinary-1 {
     background-image: url("/pict/photo/tourism/coban-putri.jpg");
 }
@@ -74,6 +79,11 @@
 }
 
 /* Lodging */
+.lodgingpage {
+    background-image: url("/pict/photo/lodging/home.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
 .img-lodging-1 {
     background-image: url("/pict/photo/tourism/coban-putri.jpg");
 }
@@ -88,6 +98,11 @@
 }
 
 /* Tourism */
+.tourismpage {
+    background-image: url("/pict/photo/tourism/home.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
 .img-tourism-1 {
     background-image: url("/pict/photo/tourism/coban-putri.jpg");
 }

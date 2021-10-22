@@ -13,7 +13,7 @@
 <body class="bg-salman text-gray-50">
     <!-- NAVBAR -->
     <nav class="px-32 bg-salman fix">
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto hidden md:block">
             <div class="relative flex items-center justify-between h-16">
 
                 <!-- LOGO -->
@@ -23,11 +23,11 @@
 
                 <!-- MENU -->
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
-                    <div class="hidden sm:block sm:ml-6">
+                    <div class="sm:ml-6">
 
                         <!-- TEXT -->
                         <div class="flex space-x-4">
-                            <a href="/index.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Home</a>
+                            <a href="/index.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm font-bold">Home</a>
                             <a href="/data/02-tourism.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Tourism</a>
                             <a href="/data/03-culinary-restaurant.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Culinary</a>
                             <a href="/data/04-lodging-hotel.html" class="hover:bg-salman-dark px-3 py-2 rounded-md text-sm">Lodging</a>
@@ -41,52 +41,91 @@
         </div>
     </nav>
 
+    <!-- FIRST -->
+    <div class="px-12 md:px-32 py-32 grid grid-cols-1">
+        <div class="homepage ani-card shadow-lgg">
+            <div class="py-40 flex justify-center">
+                <img class="w-1/4" src="/pict/logo/white-long-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECOND -->
+    <div class="py-40">
+        <div class="sm:py-20 md:py-32 text-5xl font-medium text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            Welcome
+        </div>
+    </div>
+
+
     <!-- THIRD -->
-    <div class="py-32">
-        <div class="text-5xl font-medium text-center">
-            Privacy Policy
+    <div class="py-40">
+        <div class="sm:py-20 md:py-32 text-5xl font-medium text-center">
+            Explore 
         </div>
-    </div>
-
-    <div class="px-40">
-        <div class="pb-10 text-xl">
-            <p class="mb-4">
-                Privasi Anda penting bagi Kami. Untuk lebih melindungi privasi Anda, Kami menyediakan pemberitahuan ini menjelaskan praktek informasi online Kami dan pilihan Anda dapat membuat tentang cara informasi dikumpulkan dan digunakan. Untuk membuat pemberitahuan ini mudah ditemukan, Kami membuatnya tersedia di homepage kami dan di setiap titik di mana informasi pribadi mungkin akan diminta.
-            </p>
-            <p class="mt-4">
-                Lain-lain Pihak Ketiga server iklan atau jaringan iklan juga dapat menggunakan cookie untuk melacak aktivitas pengguna di website ini untuk mengukur efektivitas iklan dan alasan lainnya yang akan disediakan dalam kebijakan privasi mereka sendiri, Malang-Guidance.com tidak memiliki akses atau kontrol terhadap cookie yang mungkin digunakan oleh pengiklan pihak ketiga.
-            </p>
-        </div>
-        <div class="py-10 grid grid-cols-2">
-            <div class="border-r pr-16 text-xl">
-                <div class="text-2xl font-bold pb-6">
-                    Pengumpulan Informasi Pribadi
-                </div>
-                <p>
-                    Ketika mengunjungi Malang-Guidance.com, alamat IP yang digunakan untuk mengakses situs akan mulai bisa login bersama dengan tanggal dan waktu akses. Informasi ini adalah murni digunakan untuk menganalisis kecenderungan, mengelola situs, melacak gerakan pengguna dan mengumpulkan informasi demografis yang luas untuk penggunaan internal. Yang paling penting, setiap alamat IP dicatat yang tidak terhubung dengan informasi pribadi.
-                </p>
+        
+        <!-- Tour -->
+        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
             </div>
-            <div class="pl-16 text-xl">
-                <div class="text-2xl font-bold pb-6">
-                    Link ke Situs pihak ketiga
+            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+                <div class="pb-5 md:pb-8 text-3xl font-medium">
+                    Tourism
                 </div>
-                <p>
-                    Kami telah menyertakan link di situs ini untuk Anda gunakan atau Anda jadikan referensi. Kami bertanggung jawab atas semua konten yang terdapat di website ini dan Anda harus menyadari bahwa kebijakan privasi di situs ini sangat berlaku. Jadi Kami harapkan jika Anda ingin menyalin kembali artikel di website ini sertakan pula link halaman yang ingin Anda salin kontennya.
+                <p class="sm:pb-10 md:pb-16">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
                 </p>
+                <a class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" href="/data/02-tourism.html">
+                    Click for more...
+                </a>
             </div>
         </div>
-        <div class="pt-10 pb-40 text-xl">
-            <p class="mb-4">
-                Isi pernyataan ini dapat diubah setiap saat, pada kebijaksanaan kami.
-            </p>
-            <p class="mt-4">
-                Jika Anda memiliki pertanyaan tentang kebijakan privasi Malang-Guidance.com maka Anda dapat menghubungi Kami melalui email; shiningbatu@gmail.com. Terima Kasih.
-            </p>
+
+        <div class="py-12"></div>
+
+        <!-- Culinary -->
+        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
+            </div>
+            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+                <div class="pb-5 md:pb-8 text-3xl font-medium">
+                    Culinary
+                </div>
+                <p class="sm:pb-10 md:pb-16">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
+                </p>
+                <a class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" href="/data/03-culinary-restaurant.html">
+                    Click for more...
+                </a>
+            </div>
         </div>
+
+        <div class="py-12"></div>
+
+        <!-- Lodging -->
+        <div class="px-20 md:px-32 grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-16 items-center">
+            <div class="flex justify-center ani-card shadow-lgg" data-aos="fade-right" data-aos-duration="1500">
+                <img class="w-full object-cover" src="/pict/photo/home/tourism.jpg" alt="logo">
+            </div>
+            <div class="py-2 md:py-12" data-aos="fade-left" data-aos-duration="1500">
+                <div class="pb-5 md:pb-8 text-3xl font-medium">
+                    Lodging
+                </div>
+                <p class="sm:pb-10 md:pb-16">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae dictum purus, ac tristique libero. Integer et nisl non neque malesuada pulvinar sed euismod purus. Nullam quis purus eget ante fringilla tincidunt vitae sit amet dolor.
+                </p>
+                <a class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" href="/data/04-lodging-hotel.html">
+                    Click for more...
+                </a>
+            </div>
+        </div>
+
     </div>
 
-
-
+ 
     
 
     <!-- FOOTER -->
