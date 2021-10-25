@@ -30,3 +30,26 @@
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 4%, rgba(255,255,255,0) 100%);
 }
 
+.marker {
+    background-image: url('/pict/photo/mapbox-icon.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mapboxgl-popup-content > h3{
+    color: black;
+    font-weight: bold;
+}
+
