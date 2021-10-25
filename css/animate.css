@@ -53,3 +53,7 @@
     font-weight: bold;
 }
 
+.mapboxgl-popup-content > p{
+    color: black;
+}
+
