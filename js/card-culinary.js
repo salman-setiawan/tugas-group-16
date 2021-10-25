@@ -90,3 +90,4 @@ async function buton(e) {
         const article = await getCulinaryByCategory(select);
         displayCulinaryCard(article);
     }
+}
