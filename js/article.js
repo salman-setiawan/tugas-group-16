@@ -26,7 +26,6 @@ const createPostElement = (post) => {
   categoryContent.className = "capitalize";
   titleContent.innerHTML = post.title;
   document.getElementById("image-main").style.backgroundImage = "url("+ post.picLink +")";
-  //categoryContent.classList.add("invisible");
 
   paraOne.innerHTML = post.paragraph_1;
   paraTwo.innerHTML = post.paragraph_2;
@@ -35,11 +34,6 @@ const createPostElement = (post) => {
   addressContent.innerHTML = post.address;
   timeContent.innerHTML = post.time;
   contactContent.innerHTML = post.contact;
-
-  // EDIT HERE
-  // elCardTitle.innerHTML = post.title;
-  // elCardImg.setAttribute('src', thumbnail);
-  // elCardBtn.setAttribute('href', '/post.html?post_id=' + post.id);
 };
 
 const renderPosts = async () => {
@@ -56,6 +50,8 @@ const renderPosts = async () => {
     console.log("Masuk");
     let post = await getLodgingById(id);
     createPostElement(post);
+    const time = document.querySelector(".time-block")
+    time.classList.add("hidden")
   }
   else if(category === "street food" || category === "restaurant" || category === "coffee shop"){
     let post = await getCulinaryById(id);

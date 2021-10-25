@@ -36,39 +36,3 @@ window.addEventListener(
     displayTourismCard(article);
   }
 );
-
-// CULINARY
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const renderPosts = async () => {
-//     let article = await getTourism();
-//     let data = article.tourism;
-//     for(let i = 0; i < 3; i++){
-//         // categoryTourism.appendChild(displayTourismCard(article[i]));
-//         displayTourismCard(data[i]);
-//     }
-// };
-
-// renderPosts();
