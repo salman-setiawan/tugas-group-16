@@ -6,7 +6,6 @@ console.log(category)
 let id = params.get("post_id");
 let longitude, latitude, title;
 
-
 if(category === "tourism"){
     let post = await getTourismById(id);
     longitude = post.longitude;
@@ -24,6 +23,7 @@ else if(category === "street food" || category === "restaurant" || category === 
     longitude = post.longitude;
     latitude = post.latitude;
     title = post.title;
+
 }
 
 mapboxgl.accessToken =

@@ -12,8 +12,9 @@ const displayLodgingCard = (items) => {
     <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover bg-center" style="background-image: url(${lodging.picLink})">
       <div class="pt-40 dark-linear">
           <div class="px-5 py-4">
+
               <div class="pb-1 flex items-center rating" id="lodging-${lodging.id}">
-              
+
               </div>
               <div class="font-bold text-gray-50 text-mb mb-2">${lodging.title}</div>
               <p class="pb-2 text-gray-400 text-xs">
