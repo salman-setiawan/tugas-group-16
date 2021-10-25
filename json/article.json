@@ -149,8 +149,8 @@
       "address": "Jl. Kartini No.6, Ngaglik, Sisir, Kec. Batu, Malang, Jawa Timur 65311",
       "time": "08.00-23.00 WIB",
       "contact": "0813-3431-3353",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "112.5238012",
+      "latitude": "-7.8709473"
     },
     {
       "id": 4,
@@ -164,8 +164,8 @@
       "address": "Jl Bukit Pandeman Hill, Kota Batu, Jawa Timur 65316.",
       "time": "10.00 WIB-24.00 WIB",
       "contact": "0821-3203-1887",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "112.5146782",
+      "latitude": "-7.8912712"
     },
     {
       "id": 5,
@@ -179,8 +179,8 @@
       "address": "Jalan Batanghari Nomor 5, Rampal Celaket, Kecamatan Klojen, Kota Malang, Jawa Timur dan kode pos 65111",
       "time": "08.00–21.30 WIB",
       "contact": "+62878-9658-4221",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "112.628345",
+      "latitude": "-7.9625219"
     },
     {
       "id": 6,
@@ -194,8 +194,8 @@
       "address": "Jl. Patimura No.126, Temas, Kec. Batu, Kota Batu, Jawa Timur 65315",
       "time": " 08.00-20.00 WIB",
       "contact": "(0341)597275",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "112.5347373",
+      "latitude": "-7.8870246"
     },
     {
       "id": 7,
@@ -209,8 +209,8 @@
       "address": "Jl. Jenderal Basuki Rahmat No.5, Kauman, Kec. Klojen, Kota Malang, Jawa Timur 65119",
       "time": "09.00–21.30",
       "contact": "(0341)364052",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "112.6215987",
+      "latitude": "-7.9807039"
     },
     {
       "id": 8,
@@ -224,13 +224,13 @@
       "address": "Jalan Joyo Agung, Merjosari, Lowokwaru, Tlogomas, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144",
       "time": "10:00-21:00 WIB",
       "contact": "0813-3451-4643",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "112.513084",
+      "latitude": "-7.8337397"
     },
     {
       "id": 9,
       "category": "coffee shop",
-      "title": "Noi Coffee ",
+      "title": "Noi Coffee",
       "picLink": "https://cdn.idntimes.com/content-images/community/2021/07/180891101-3000795853578696-6021313873309621551-n-3f470419c48481a410869607195370a0-631acb8ddcb43d9ad4a34b484a0c2114.jpg",
       "description": "Cafe ini sendiri baru mulai beroperasi pada Bulan September 2020 dan langsung viral di media sosial, tentu kamu sudah bisa menebak kenapa cafe ini cepat terkenal karena di tempat ini pemandanganya serasa di atas awan dengan desain cafe yang kekinian.",
       "paragraph_1": "Bagi kamu yang suka hunting foto dijamin tidak akan menyesal jika mendatangi cafe terbaru ini karena setiap sudut area dari tempat ini begitu instagramable.mulai dari desain interior cafe yang dipenuhi gambar abstrak berwarna hitam putih, suasana hijau diisekitarnya, sampai kopi cantik bergambar hewan seperti kuda, angsa, dan panda.",
