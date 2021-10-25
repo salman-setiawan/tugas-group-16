@@ -8,7 +8,7 @@ const displayLodgingCard = (items) => {
 let displayLodging = items.map(
   (lodging) => `
   <a href = "10-artikel.html?post_id=${lodging.id}&post_category=${lodging.category}""> 
-    <div class="rounded overflow-hidden shadow-lgg ani-card" style="background-image: url(${lodging.picLink})">
+    <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover bg-center" style="background-image: url(${lodging.picLink})">
       <div class="pt-40 dark-linear">
           <div class="px-5 py-4">
               <div class="pb-1 flex items-center">

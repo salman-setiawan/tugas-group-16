@@ -7,7 +7,7 @@ const displayTourismCard = (items) => {
   let displayTourism = items.map(
     (tourism) => `
     <a href = "10-artikel.html?post_id=${tourism.id}&post_category=${tourism.category}"> 
-        <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover" style="background-image: url(${tourism.picLink})" >
+        <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover bg-center" style="background-image: url(${tourism.picLink})" >
             <div class="pt-40 dark-linear">
                 <div class="px-5 py-4">
                     <div class="pb-1 flex items-center">

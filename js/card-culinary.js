@@ -8,7 +8,7 @@ const displayCulinaryCard = (items) => {
   let displayCulinary = items.map(
     (culinary) => `
     <a href = "10-artikel.html?post_id=${culinary.id}&post_category=${culinary.category}""> 
-      <div class="rounded overflow-hidden shadow-lgg ani-card" style="background-image: url(${culinary.picLink})">
+      <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover bg-center" style="background-image: url(${culinary.picLink})">
         <div class="pt-40 dark-linear">
           <div class="px-5 py-4">
             <div class="pb-1 flex items-center">
@@ -34,7 +34,7 @@ const displayCulinaryCard = (items) => {
 window.onload = myMain;
 
 let restaurant = document.getElementById('restaurant');
-let streetFood = document.getElementById('street-food');
+let streetFood = document.getElementById('street food');
 let coffeeShop = document.getElementById('coffee shop');
 let all = document.getElementById('all');
 
@@ -69,7 +69,7 @@ async function buton(e) {
             coffeeShop.classList.remove("bg-pink-500");
             all.classList.remove("bg-pink-500");
         }
-        else if(e.target.id == "street-food"){
+        else if(e.target.id == "street food"){
             streetFood.classList.add("bg-pink-500");
             streetFood.classList.remove("hover:bg-salman-dark");
             restaurant.classList.remove("bg-pink-500");

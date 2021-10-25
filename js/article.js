@@ -19,15 +19,11 @@ const createPostElement = (post) => {
   const contactContent = elInformation.querySelector(".contact");
 
   const titleContent = elTitleSection.querySelector(".title");
-  const categoryContent = elTitleSection.querySelector(".category");
+  const categoryContent = elTitleSection.querySelector("#category");
   const mainPicContent = elTitleSection.querySelector(".article-pic");
 
-  function capitalize(s)
-  {
-    return s[0].toUpperCase() + s.slice(1);
-  }
-  let category = capitalize(post.category);
-  categoryContent.innerHTML = category;
+  categoryContent.innerHTML = post.category;
+  categoryContent.className = "capitalize";
   titleContent.innerHTML = post.title;
   document.getElementById("image-main").style.backgroundImage = "url("+ post.picLink +")";
   //categoryContent.classList.add("invisible");
@@ -61,7 +57,7 @@ const renderPosts = async () => {
     let post = await getLodgingById(id);
     createPostElement(post);
   }
-  else if(category === "street-food" || category === "restaurant" || category === "coffee shop"){
+  else if(category === "street food" || category === "restaurant" || category === "coffee shop"){
     let post = await getCulinaryById(id);
     createPostElement(post);
   }
