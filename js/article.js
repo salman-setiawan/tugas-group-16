@@ -1,5 +1,5 @@
 //FETCH ARTICLE ID DARI CARD-CARD.JS
-import { getTourism, getTourismById, getCulinaryById, getLodgingById } from "./helper.js";
+import { getTourismById, getCulinaryById, getLodgingById } from "./helper.js";
 
 const params = new URLSearchParams(window.location.search);
 
