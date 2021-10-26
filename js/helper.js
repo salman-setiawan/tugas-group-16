@@ -95,7 +95,6 @@ export const getLodgingByCategory = async(category) => {
     let result = article.filter(obj => {
       return obj.category == category;
     })
-    console.log(result);
     return result;
   } catch (err) {
     console.log(err);

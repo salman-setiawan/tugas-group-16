@@ -4,22 +4,26 @@ import { getTourismById, getCulinaryById, getLodgingById } from "./helper.js";
 let category = params.get("post_category");
 console.log(category)
 let id = params.get("post_id");
-let longitude;
-let latitude;
+let longitude, latitude, title;
 
 if(category === "tourism"){
     let post = await getTourismById(id);
     longitude = post.longitude;
     latitude = post.latitude;
+    title = post.title;
 }
 else if(category === "hotels" || category === "resorts" || category === "villas"){
-    console.log("Masuk");
+    let post = await getLodgingById(id);
     longitude = post.longitude;
     latitude = post.latitude;
+    title = post.title;
 }
 else if(category === "street food" || category === "restaurant" || category === "coffee shop"){
+    let post = await getCulinaryById(id);
     longitude = post.longitude;
     latitude = post.latitude;
+    title = post.title;
+
 }
 
 mapboxgl.accessToken =
@@ -44,8 +48,8 @@ const geojson = {
         ],
       },
       properties: {
-        title: "Washington, D.C",
-        description: "Tourism",
+        title: title,
+        description: category,
       },
     },
   ],

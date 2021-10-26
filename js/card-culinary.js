@@ -91,28 +91,3 @@ async function buton(e) {
         displayCulinaryCard(article);
     }
 }
-
-// const renderPosts = async () => {
-//     // EDIT HERE
-//     let posts = await getPosts();
-//     posts.map(async (value) => {
-//       let pic = await getRandomPic();
-//       elDaftarBerita.appendChild(createPostElement(pic, value));
-//     });
-// };
-// const renderCulinaryCard = (items) => {
-//   window.addEventListener(
-//     "DOMContentLoaded",
-//     async function () {
-//       const article = await getCulinary();
-//       let result = article.filter(obj => {
-//         return obj.category === "Restaurant"
-//       })
-//       console.log(result);
-//       displayCulinaryCard(result);
-//     }
-//   );
-// }
-
-// // If active then render by Category
-// renderCulinaryCard("category");
