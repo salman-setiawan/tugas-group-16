@@ -83,6 +83,7 @@ let villas = document.getElementById("villas");
 let hotels = document.getElementById("hotels");
 let resorts = document.getElementById("resorts");
 let all = document.getElementById("all");
+let select, article;
 
 async function initAll() {
   if (all.classList.contains("bg-pink-500")) {
@@ -131,14 +132,73 @@ async function buton(e) {
       all.classList.remove("bg-pink-500");
     }
   }
-  let select = e.target.id;
+  select = e.target.id;
   console.log(select);
-  if (!all.classList.contains("bg-pink-500")) {
-    const article = await getLodgingByCategory(select);
-    displayLodgingCard(article);
-    setStarByCategory(select)
+  if(select != "search-input"){
+    article = await getLodgingByCategory(select);
+    if (!all.classList.contains("bg-pink-500")) {
+      displayLodgingCard(article);
+      setStarByCategory(select)
+    }
+    else {
+      await setStars();
+      article = await getLodging();
+    }
   }
-  else if (all.classList.contains("bg-pink-500")) {
-    await setStars();
+}
+
+// SEARCH
+const cardContainer = document.getElementById("card-container")
+const searchResult = document.getElementById("search-input")
+const buttonSearch = document.getElementById("button-search")
+
+buttonSearch.addEventListener("click", Search)
+searchResult.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    Search(article);
   }
+});
+
+function Search(article){
+  cardContainer.innerHTML=""
+  const searchResultValue = searchResult.value
+  const pattern = new RegExp(`${searchResultValue}` , "i")
+  const result = article.filter(card => card.title.match(pattern)) 
+
+  result.forEach(card=>{
+      const insertCard = `
+      <a href = "10-artikel.html?post_id=${card.id}&post_category=${card.category}""> 
+        <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover bg-center" style="background-image: url(${card.picLink})">
+          <div class="pt-40 dark-linear">
+            <div class="px-5 py-4">
+              <div class="pb-1 flex items-center" id="star-${card.id}">
+
+              </div>
+              <div class="font-bold text-gray-50 text-mb mb-2">${card.title}</div>
+              <p class="pb-2 text-gray-400 text-xs">
+                ${card.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    `
+    cardContainer.insertAdjacentHTML("beforeend", insertCard)
+  })
+
+  // Set star for each card
+  result.forEach(card=>{
+    let targetCard = document.getElementById(`star-${card.id}`);
+    let targetStar = card.star;
+    console.log(targetCard);
+    console.log(card.title, targetStar);
+    for (let i = 0; i < targetStar; i++) {
+      displayStars += starVisible;
+    }
+    for (let i = 0; i < 5 - targetStar; i++) {
+      displayStars += starInvisible;
+    }
+    targetCard.innerHTML = displayStars;
+    displayStars = "";
+  })
 }

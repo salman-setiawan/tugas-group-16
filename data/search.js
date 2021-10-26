@@ -2,7 +2,7 @@ const cardContainer = document.getElementById("card-container")
 const searchResult = document.getElementById("search-input")
 const buttonSearch = document.getElementById("button-search")
 
-function Search(title){
+function Search(){
     cardContainer.innerHTML=""
     const searchResultValue = searchResult.value
     const pattern = new RegExp(`${searchResultValue}` , "i")
@@ -28,12 +28,15 @@ function Search(title){
                 </div>
             </div>
         `
-    
         cardContainer.insertAdjacentHTML("beforeend", insertCard)
     })
-
 }
 buttonSearch.addEventListener("click", Search)
+searchResult.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      Search();
+    }
+});
 
 const cards = [
     {
@@ -75,7 +78,5 @@ cards.forEach(card=>{
             </div>
         </div>
     `
-
     cardContainer.insertAdjacentHTML("beforeend", insertCard)
 })
-

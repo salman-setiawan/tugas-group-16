@@ -74,10 +74,20 @@
                 <li>
                     <button id="resorts" class="inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">Resorts</button>
                 </li>
+
+                 <!-- SEARCH BUTTON -->
+                <div class= "p-2 mb:pt-0 inline-flex items-center bg-white rounded ml-auto">
+                    <input type="text" class="text-gray-600 focus:outline-none" id="search-input" placeholder="Search...">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 hover:text-pink-600" id="button-search" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </button>  
+                </div>
             </ul>
         </div>
 
-        <div class="py-8 pb-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-5 gap-y-8 card-lodging">
+        <div class="py-8 pb-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-5 gap-y-8 card-lodging" id="card-container">
 
             <!--Card 1-->
             <!-- <div class="rounded overflow-hidden shadow-lgg img-tourism-1 ani-card">
