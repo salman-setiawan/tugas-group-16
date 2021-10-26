@@ -1,8 +1,4 @@
-const formPartnership = document.querySelector("#form-partnership"); //input username
-
-
-// console.log(email);   
-// let description = document.getElementById("grid-description").value;
+const formPartnership = document.querySelector("#form-partnership");
 
 formPartnership.onsubmit = function(e){ 
     let firstName = document.getElementById("grid-first-name").value
