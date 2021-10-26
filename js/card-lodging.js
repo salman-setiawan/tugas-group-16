@@ -83,7 +83,8 @@ let villas = document.getElementById("villas");
 let hotels = document.getElementById("hotels");
 let resorts = document.getElementById("resorts");
 let all = document.getElementById("all");
-let select, article;
+let article = await getLodging();
+let select;
 
 async function initAll() {
   if (all.classList.contains("bg-pink-500")) {
@@ -140,9 +141,9 @@ async function buton(e) {
       displayLodgingCard(article);
       setStarByCategory(select)
     }
-    else {
-      await setStars();
+    else { //All category is selected
       article = await getLodging();
+      await setStars();
     }
   }
 }
@@ -162,8 +163,13 @@ searchResult.addEventListener('keypress', function (e) {
 function Search(article){
   cardContainer.innerHTML=""
   const searchResultValue = searchResult.value
+  const emptyWord = document.getElementById("card-container"); 
   const pattern = new RegExp(`${searchResultValue}` , "i")
-  const result = article.filter(card => card.title.match(pattern)) 
+  const result = article.filter(card => card.title.match(pattern))
+  
+  if(result.length == 0){
+    emptyWord.innerHTML = "Search Not Found"
+  }
 
   result.forEach(card=>{
       const insertCard = `

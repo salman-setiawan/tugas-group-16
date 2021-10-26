@@ -37,7 +37,8 @@ let restaurant = document.getElementById('restaurant');
 let streetFood = document.getElementById('street food');
 let coffeeShop = document.getElementById('coffee shop');
 let all = document.getElementById('all');
-let select, article;
+let article = await getCulinary();
+let select;
 
 async function initAll() {
     if (all.classList.contains('bg-pink-500')) {
@@ -54,36 +55,36 @@ async function myMain() {
 async function buton(e) {
   if (e.target.tagName == 'BUTTON') {
   //Select which button is click
-      if(e.target.id == "all"){ 
-          const article = await getCulinary();
-          displayCulinaryCard(article);
-          all.classList.add("bg-pink-500");
-          all.classList.remove("hover:bg-salman-dark");
-          streetFood.classList.remove("bg-pink-500");
-          coffeeShop.classList.remove("bg-pink-500");
-          restaurant.classList.remove("bg-pink-500");
-      }
-      else if(e.target.id == "restaurant"){ 
-          restaurant.classList.add("bg-pink-500");
-          restaurant.classList.remove("hover:bg-salman-dark");
-          streetFood.classList.remove("bg-pink-500");
-          coffeeShop.classList.remove("bg-pink-500");
-          all.classList.remove("bg-pink-500");
-      }
-      else if(e.target.id == "street food"){
-          streetFood.classList.add("bg-pink-500");
-          streetFood.classList.remove("hover:bg-salman-dark");
-          restaurant.classList.remove("bg-pink-500");
-          coffeeShop.classList.remove("bg-pink-500");
-          all.classList.remove("bg-pink-500");
-      }
-      else if(e.target.id == "coffee shop"){
-          coffeeShop.classList.add("bg-pink-500");
-          coffeeShop.classList.remove("hover:bg-salman-dark");
-          restaurant.classList.remove("bg-pink-500");
-          streetFood.classList.remove("bg-pink-500");
-          all.classList.remove("bg-pink-500");
-      }
+    if(e.target.id == "all"){ 
+        const article = await getCulinary();
+        displayCulinaryCard(article);
+        all.classList.add("bg-pink-500");
+        all.classList.remove("hover:bg-salman-dark");
+        streetFood.classList.remove("bg-pink-500");
+        coffeeShop.classList.remove("bg-pink-500");
+        restaurant.classList.remove("bg-pink-500");
+    }
+    else if(e.target.id == "restaurant"){ 
+        restaurant.classList.add("bg-pink-500");
+        restaurant.classList.remove("hover:bg-salman-dark");
+        streetFood.classList.remove("bg-pink-500");
+        coffeeShop.classList.remove("bg-pink-500");
+        all.classList.remove("bg-pink-500");
+    }
+    else if(e.target.id == "street food"){
+        streetFood.classList.add("bg-pink-500");
+        streetFood.classList.remove("hover:bg-salman-dark");
+        restaurant.classList.remove("bg-pink-500");
+        coffeeShop.classList.remove("bg-pink-500");
+        all.classList.remove("bg-pink-500");
+    }
+    else if(e.target.id == "coffee shop"){
+        coffeeShop.classList.add("bg-pink-500");
+        coffeeShop.classList.remove("hover:bg-salman-dark");
+        restaurant.classList.remove("bg-pink-500");
+        streetFood.classList.remove("bg-pink-500");
+        all.classList.remove("bg-pink-500");
+    }
   }
   select = e.target.id;
   console.log(select);
@@ -92,8 +93,8 @@ async function buton(e) {
     if (!all.classList.contains('bg-pink-500')) {
         displayCulinaryCard(article);
     }
-    else{
-      article = await await getCulinary();
+    else{ //All category is selected
+      article = await getCulinary();
     }
   }
 }
@@ -113,10 +114,15 @@ searchResult.addEventListener('keypress', function (e) {
 function Search(article){
     cardContainer.innerHTML=""
     const searchResultValue = searchResult.value
+    const emptyWord = document.getElementById("card-container"); 
     const pattern = new RegExp(`${searchResultValue}` , "i")
-    const Result = article.filter(card => card.title.match(pattern)) 
+    const result = article.filter(card => card.title.match(pattern))
+    
+    if(result.length == 0){
+      emptyWord.innerHTML = "Search Not Found"
+    }
 
-    Result.forEach(card=>{
+    result.forEach(card=>{
         const insertCard = `
 
         <a href = "10-artikel.html?post_id=${card.id}&post_category=${card.category}""> 
