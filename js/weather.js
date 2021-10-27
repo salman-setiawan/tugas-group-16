@@ -57,35 +57,3 @@ setInterval(() => {
     dateEl.innerHTML = days[day] + ', ' + date + ' ' + months[month]
 
 }, 1000);
-
-
-// + ':' + seconds + ' ' 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
