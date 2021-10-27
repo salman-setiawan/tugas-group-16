@@ -7,6 +7,14 @@
 .white-long-logo {
     background-image: url("/pict/logo/white-long-logo.png");
 }
+.weather-card {
+    background-image: url("/pict/photo/home/sky.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.time-card {
+    background-color: #8f007c;
+}
 .tour-pic {
     background-image: url("/pict/photo/home/tourism.jpg");
     background-position: center;
