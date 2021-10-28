@@ -11,6 +11,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-salman text-gray-50">
+    <!-- ALERT -->
+    <div class="pt-20 fix px-30">
+        <div class="text-white px-6 py-4 border-0 rounded relative mb-4 alert-pop text-center bg-green-500 invisible">
+            <span class="text-xl inline-block mr-5 align-middle">
+            <i class="fas fa-bell"></i>
+            </span>
+            <span class="inline-block align-middle mr-8">
+            <b class="capitalize text-alert">Thank You for filling out this form</b>
+            </span>
+            <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" id="closeButton" onclick="closeAlert()">
+            <span>×</span>
+            </button>
+        </div>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="px-12 md:px-32 bg-salman fix">
         <div class="max-w-7xl mx-auto hidden md:block">
@@ -45,8 +60,8 @@
     <div class="px-12 md:px-32">
 
         <!-- THIRD -->
-        <div class="pt-20 md:pt-32 pb-4 md:pb-24">
-            <div class="text-2xl md:text-5xl font-medium text-center">
+        <div class="pt-10 md:pt-16 pb-4 md:pb-24">
+            <div class="mt-2 text-2xl md:text-5xl font-medium text-center partnership-text">
                 Partnership
             </div>
         </div>
@@ -73,7 +88,7 @@
                             First Name
                             </label>
                             <input class="appearance-none block w-full bg-gray-200 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"/>
-                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                         </div>
                         <div class="w-full md:w-1/2 px-3">
                             <label class="block uppercase tracking-wide text-xs font-bold mb-2" for="grid-last-name">
@@ -88,7 +103,7 @@
                             Email
                             </label>
                             <input class="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="janedoe@mail.com">
-                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                         </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-6">
@@ -97,7 +112,7 @@
                             Description
                             </label>
                             <textarea class="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-description" rows="5" placeholder="Write Here"></textarea>
-                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                         </div>
                     </div>
                     <div class="pt-8 flex flex-wrap -mx-3 mb-6">
@@ -110,7 +125,6 @@
                 </form>
             </div>
         </div>
-
 
         <!-- FOOTER -->
         <footer>

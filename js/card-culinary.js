@@ -41,7 +41,7 @@ let article = await getCulinary();
 let select;
 
 async function initAll() {
-    if (all.classList.contains('bg-pink-500')) {
+    if (all.classList.contains('border-b-2')) {
         const article = await getCulinary();
         displayCulinaryCard(article);
     }
@@ -58,39 +58,35 @@ async function buton(e) {
     if(e.target.id == "all"){ 
         const article = await getCulinary();
         displayCulinaryCard(article);
-        all.classList.add("bg-pink-500");
-        all.classList.remove("hover:bg-salman-dark");
-        streetFood.classList.remove("bg-pink-500");
-        coffeeShop.classList.remove("bg-pink-500");
-        restaurant.classList.remove("bg-pink-500");
+        all.classList.add("border-b-2");
+        streetFood.classList.remove("border-b-2");
+        coffeeShop.classList.remove("border-b-2");
+        restaurant.classList.remove("border-b-2");
     }
     else if(e.target.id == "restaurant"){ 
-        restaurant.classList.add("bg-pink-500");
-        restaurant.classList.remove("hover:bg-salman-dark");
-        streetFood.classList.remove("bg-pink-500");
-        coffeeShop.classList.remove("bg-pink-500");
-        all.classList.remove("bg-pink-500");
+        restaurant.classList.add("border-b-2");
+        streetFood.classList.remove("border-b-2");
+        coffeeShop.classList.remove("border-b-2");
+        all.classList.remove("border-b-2");
     }
     else if(e.target.id == "street food"){
-        streetFood.classList.add("bg-pink-500");
-        streetFood.classList.remove("hover:bg-salman-dark");
-        restaurant.classList.remove("bg-pink-500");
-        coffeeShop.classList.remove("bg-pink-500");
-        all.classList.remove("bg-pink-500");
+        streetFood.classList.add("border-b-2");
+        restaurant.classList.remove("border-b-2");
+        coffeeShop.classList.remove("border-b-2");
+        all.classList.remove("border-b-2");
     }
     else if(e.target.id == "coffee shop"){
-        coffeeShop.classList.add("bg-pink-500");
-        coffeeShop.classList.remove("hover:bg-salman-dark");
-        restaurant.classList.remove("bg-pink-500");
-        streetFood.classList.remove("bg-pink-500");
-        all.classList.remove("bg-pink-500");
+        coffeeShop.classList.add("border-b-2");
+        restaurant.classList.remove("border-b-2");
+        streetFood.classList.remove("border-b-2");
+        all.classList.remove("border-b-2");
     }
   }
   select = e.target.id;
   console.log(select);
   if(select != "search-input"){
     article = await getCulinaryByCategory(select);
-    if (!all.classList.contains('bg-pink-500')) {
+    if (!all.classList.contains('border-b-2')) {
         displayCulinaryCard(article);
     }
     else{ //All category is selected

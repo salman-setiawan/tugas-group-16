@@ -12,9 +12,7 @@ const displayLodgingCard = (items) => {
     <div class="rounded overflow-hidden shadow-lgg ani-card bg-cover bg-center" style="background-image: url(${lodging.picLink})">
       <div class="pt-40 dark-linear">
           <div class="px-5 py-4">
-
               <div class="pb-1 flex items-center rating" id="lodging-${lodging.id}">
-
               </div>
               <div class="font-bold text-gray-50 text-mb mb-2">${lodging.title}</div>
               <p class="pb-2 text-gray-400 text-xs">
@@ -87,7 +85,7 @@ let article = await getLodging();
 let select;
 
 async function initAll() {
-  if (all.classList.contains("bg-pink-500")) {
+  if (all.classList.contains("border-b-2")) {
     const article = await getLodging();
     displayLodgingCard(article);
   }
@@ -105,39 +103,35 @@ async function buton(e) {
     if (e.target.id == "all") {
       const article = await getLodging();
       displayLodgingCard(article);
-      all.classList.add("bg-pink-500");
-      all.classList.remove("hover:bg-salman-dark");
-      villas.classList.remove("bg-pink-500");
-      resorts.classList.remove("bg-pink-500");
-      hotels.classList.remove("bg-pink-500");
+      all.classList.add("border-b-2");
+      villas.classList.remove("border-b-2");
+      resorts.classList.remove("border-b-2");
+      hotels.classList.remove("border-b-2");
     } 
     else if (e.target.id == "hotels") {
-      hotels.classList.add("bg-pink-500");
-      hotels.classList.remove("hover:bg-salman-dark");
-      villas.classList.remove("bg-pink-500");
-      resorts.classList.remove("bg-pink-500");
-      all.classList.remove("bg-pink-500");
+      hotels.classList.add("border-b-2");
+      villas.classList.remove("border-b-2");
+      resorts.classList.remove("border-b-2");
+      all.classList.remove("border-b-2");
     } 
     else if (e.target.id == "villas") {
-      villas.classList.add("bg-pink-500");
-      villas.classList.remove("hover:bg-salman-dark");
-      hotels.classList.remove("bg-pink-500");
-      resorts.classList.remove("bg-pink-500");
-      all.classList.remove("bg-pink-500");
+      villas.classList.add("border-b-2");
+      hotels.classList.remove("border-b-2");
+      resorts.classList.remove("border-b-2");
+      all.classList.remove("border-b-2");
     } 
     else if (e.target.id == "resorts") {
-      resorts.classList.add("bg-pink-500");
-      resorts.classList.remove("hover:bg-salman-dark");
-      hotels.classList.remove("bg-pink-500");
-      villas.classList.remove("bg-pink-500");
-      all.classList.remove("bg-pink-500");
+      resorts.classList.add("border-b-2");
+      hotels.classList.remove("border-b-2");
+      villas.classList.remove("border-b-2");
+      all.classList.remove("border-b-2");
     }
   }
   select = e.target.id;
   console.log(select);
   if(select != "search-input"){
     article = await getLodgingByCategory(select);
-    if (!all.classList.contains("bg-pink-500")) {
+    if (!all.classList.contains("border-b-2")) {
       displayLodgingCard(article);
       setStarByCategory(select)
     }
@@ -178,7 +172,6 @@ function Search(article){
           <div class="pt-40 dark-linear">
             <div class="px-5 py-4">
               <div class="pb-1 flex items-center" id="star-${card.id}">
-
               </div>
               <div class="font-bold text-gray-50 text-mb mb-2">${card.title}</div>
               <p class="pb-2 text-gray-400 text-xs">
