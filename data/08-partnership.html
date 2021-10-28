@@ -11,14 +11,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-salman text-gray-50">
+
     <!-- ALERT -->
-    <div class="pt-20 fix px-30">
+    <div class="pt-20 fix px-40">
         <div class="text-white px-6 py-4 border-0 rounded relative mb-4 alert-pop text-center bg-green-500 invisible">
             <span class="text-xl inline-block mr-5 align-middle">
             <i class="fas fa-bell"></i>
             </span>
             <span class="inline-block align-middle mr-8">
-            <b class="capitalize text-alert">Thank You for filling out this form</b>
+            <b class="capitalize text-alert">thank you for filling out this form</b>
             </span>
             <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" id="closeButton" onclick="closeAlert()">
             <span>×</span>
@@ -56,12 +57,43 @@
         </div>
     </nav>
 
+    <!-- MOBILE NAVBAR -->
+    <nav class="bg-salman nav-mobile fix block md:hidden">
+        <ul class="nav-ul gap-2 bg-salman">
+            <a class="nav-item" href="/index.html">
+                <div class="nav-link">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                </div>
+            </a>
+            <a class="nav-item" href="/data/02-tourism.html">
+                <div class="nav-link">
+                    <i class="fas fa-mountain"></i>
+                </div>
+            </a>
+            <a class="nav-item" href="/data/03-culinary.html">
+                <div class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                </div>
+            </a>
+            <a class="nav-item" href="/data/04-lodging.html">
+                <div class="nav-link">
+                    <i class="fas fa-bed"></i>
+                </div>
+            </a>
+            <a class="nav-item" href="/data/05-about-us.html">
+                <div class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </a>
+        </ul>
+    </nav>
+
     <!-- WIDTH SCREEN -->
     <div class="px-12 md:px-32 xl:px-36 2xl:px-60">
 
         <!-- THIRD -->
-        <div class="pt-10 md:pt-16 pb-4 md:pb-24">
-            <div class="mt-2 text-2xl md:text-5xl font-medium text-center partnership-text">
+        <div class="pt-20 md:pt-32 pb-4 md:pb-24">
+            <div class="text-2xl md:text-5xl font-medium text-center">
                 Partnership
             </div>
         </div>
@@ -81,7 +113,7 @@
             </div>
         
             <div class="pb-20">
-                <form id="form-partnership" class="w-full text-gray-900 text-xs md:text-base">
+                <form id="form-partnership" class="w-full text-gray-300 text-xs md:text-base">
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label class="block uppercase tracking-wide text-xs font-bold mb-2" for="grid-first-name">
@@ -115,7 +147,7 @@
                             <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                         </div>
                     </div>
-                    <div class="pt-8 flex flex-wrap -mx-3 mb-6">
+                    <div class="pt-4 flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3">
                             <button class="bg-gray-50 text-gray-900 hover:text-gray-50 hover:bg-pink-500 font-bold py-2 px-4 border border-transparent rounded" type="submit">
                                 Submit
