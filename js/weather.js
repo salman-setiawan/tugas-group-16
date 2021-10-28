@@ -26,8 +26,7 @@ let weather = {
     },
 };
 
-
-
+weather.fetchWeather("Batu");
 
 const timeEl = document.getElementById('time')
 const dateEl = document.getElementById('date')
@@ -58,35 +57,3 @@ setInterval(() => {
     dateEl.innerHTML = days[day] + ', ' + date + ' ' + months[month]
 
 }, 1000);
-
-
-// + ':' + seconds + ' ' 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -41,37 +41,6 @@
         </div>
     </nav>
 
-    <!-- MOBILE NAVBAR -->
-    <nav class="bg-salman nav-mobile fix block md:hidden">
-        <ul class="nav-ul gap-2 bg-salman">
-            <a class="nav-item" href="/index.html">
-                <div class="nav-link">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/02-tourism.html">
-                <div class="nav-link">
-                    <i class="fas fa-mountain"></i>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/03-culinary.html">
-                <div class="nav-link">
-                    <i class="fas fa-utensils"></i>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/04-lodging.html">
-                <div class="nav-link">
-                    <i class="fas fa-bed"></i>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/05-about-us.html">
-                <div class="nav-link">
-                    <i class="fas fa-info-circle"></i>
-                </div>
-            </a>
-        </ul>
-    </nav>
-
     <!-- WIDTH SCREEN -->
     <div class="px-12 md:px-32">
 
@@ -93,24 +62,39 @@
         </div>
 
 
-        <div class="pt-10 mb:pt-0">
+        <div class="pt-10 mb:pt-0 grid grid-cols-1">
+            <!-- CATEGORY -->
             <ul class="flex text-gray-50" id="btn">
-                <li class="pr-1.5">
-                  <button id="all" class="bg-pink-500 btn-category inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">All</button>
+                <li class="pr-4 md:pr-8">
+                <button id="all" class="border-b-2 border-pink-500 btn-category inline-block py-2 px-2 font-semibold text-xs md:text-base">All</button>
                 </li>
-                <li class="pr-1.5">
-                  <button id="restaurant" class="btn-category inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">Restaurant</button>
+                <li class="pr-4 md:pr-8">
+                <button id="restaurant" class="border-pink-500 btn-category inline-block py-2 px-2 font-semibold text-xs md:text-base">Restaurant</button>
                 </li>
-                <li class="pr-1.5">
-                  <button id="street food" class="btn-category inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">Street Food</button>
+                <li class="pr-4 md:pr-8">
+                <button id="street food" class="border-pink-500 btn-category inline-block py-2 px-2 font-semibold text-xs md:text-base">Street Food</button>
                 </li>
-                <li class="pr-1.5">
-                  <button id="coffee shop" class="btn-category inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">Coffee Shop</button>
+                <li class="">
+                <button id="coffee shop" class="border-pink-500 btn-category inline-block py-2 px-2 font-semibold text-xs md:text-base">Coffee Shop</button>
                 </li>
             </ul>
+            <!-- SEARCH BUTTON -->
+            <div class="pt-10 grid grid-cols-1 md:grid-cols-3">
+                <div class= "w-full p-2 mb:pt-0 flex items-center bg-salman-dark rounded ml-auto">
+                    <input type="text" class="w-full text-xs md:text-base text-gray-50 focus:outline-none bg-transparent" id="search-input" 
+                        placeholder="Search..." 
+                        onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='Search...'">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" id="button-search" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </button>  
+                </div>
+            </div>
         </div>
 
-        <div class="py-8 pb-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-5 gap-y-8 card-culinary">
+        <div class="py-8 pb-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-5 gap-y-8 card-culinary" id="card-container">
 
         <!--Card 1-->
         <!-- <div class="rounded overflow-hidden shadow-lgg img-tourism-1 ani-card">
@@ -176,7 +160,6 @@
 
     </div>
 
-    <script src="https://kit.fontawesome.com/f63264777c.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

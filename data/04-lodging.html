@@ -41,37 +41,6 @@
         </div>
     </nav>
 
-    <!-- MOBILE NAVBAR -->
-    <nav class="bg-salman nav-mobile fix block md:hidden">
-        <ul class="nav-ul gap-2 bg-salman">
-            <a class="nav-item" href="/index.html">
-                <div class="nav-link">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/02-tourism.html">
-                <div class="nav-link">
-                    <i class="fas fa-mountain"></i>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/03-culinary.html">
-                <div class="nav-link">
-                    <i class="fas fa-utensils"></i>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/04-lodging.html">
-                <div class="nav-link">
-                    <i class="fas fa-bed"></i>
-                </div>
-            </a>
-            <a class="nav-item" href="/data/05-about-us.html">
-                <div class="nav-link">
-                    <i class="fas fa-info-circle"></i>
-                </div>
-            </a>
-        </ul>
-    </nav>
-
     <!-- WIDTH SCREEN -->
     <div class="px-12 md:px-32">
 
@@ -94,40 +63,39 @@
 
         <div class="pt-10 mb:pt-0">
             <ul class="flex text-gray-50" id="btn">
-                <li class="pr-1.5">
-                    <button id="all" class="bg-pink-500 inline-block rounded py-2 px-4 hover:text-blue-500 hover:bg-salman-dark font-semibold text-xs md:text-base">All</button>
+                <li class="pr-4 md:pr-8">
+                    <button id="all" class="border-b-2 border-pink-500 inline-block py-2 px-2 font-semibold text-xs md:text-base">All</button>
                 </li>
-                    <button id="hotels" class="inline-block rounded py-2 px-4 hover:text-blue-500 hover:bg-salman-dark font-semibold text-xs md:text-base">Hotel</button>
+                <li class="pr-4 md:pr-8">
+                    <button id="hotels" class="border-pink-500 inline-block py-2 px-2 font-semibold text-xs md:text-base">Hotel</button>
                 </li>
-                <li class="pr-1.5">
-                    <button id="villas" class="inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">Villa</button>
+                <li class="pr-4 md:pr-8">
+                    <button id="villas" class="border-pink-500 inline-block py-2 px-2 font-semibold text-xs md:text-base">Villa</button>
                 </li>
                 <li>
-                    <button id="resorts" class="inline-block rounded py-2 px-4 hover:bg-salman-dark font-semibold text-xs md:text-base">Resorts</button>
+                    <button id="resorts" class="border-pink-500 inline-block py-2 px-2 font-semibold text-xs md:text-base">Resorts</button>
                 </li>
             </ul>
+            <!-- SEARCH BUTTON -->
+            <div class="pt-10 grid grid-cols-1 md:grid-cols-3">
+                <div class= "w-full p-2 mb:pt-0 flex items-center bg-salman-dark rounded ml-auto">
+                    <input type="text" class="w-full text-xs md:text-base text-gray-50 focus:outline-none bg-transparent" id="search-input" 
+                        placeholder="Search..." 
+                        onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='Search...'">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" id="button-search" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </button>  
+                </div>
+            </div>
         </div>
 
-        <div class="py-8 pb-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-5 gap-y-8 card-lodging">
+        <!-- CARD -->
 
-            <!--Card 1-->
-            <!-- <div class="rounded overflow-hidden shadow-lgg img-tourism-1 ani-card">
-                <div class="pt-40 dark-linear">
-                    <div class="px-5 py-4">
-                        <div class="pb-1 flex items-center">
-                            <svg class="w-5 h-5" fill="#0fd497" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg class="w-5 h-5" fill="#0fd497" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg class="w-5 h-5" fill="#0fd497" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg class="w-5 h-5" fill="#0fd497" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg class="w-5 h-5" fill="#6B7280" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        </div>
-                        <div class="font-bold text-gray-50 text-mb mb-2">Mie Setan Malang</div>
-                        <p class="pb-2 text-gray-400 text-xs">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                    </div>
-                </div>
-            </div> -->    
+        <div class="py-8 pb-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-5 gap-y-8 card-lodging" id="card-container">
+ 
         </div>
     
         <!-- FOOTER -->
@@ -178,7 +146,6 @@
     </div>
 
 
-    <script src="https://kit.fontawesome.com/f63264777c.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
